@@ -7,16 +7,11 @@ class BinaryTree:
 def __sumRootToLeaf(root, val):
     if root == None:
         return 0
-    val = val * 10 + root.data
-    print("val", val)
+    val = (val << 1) + root.data
+    # print("val", val)
     if root.left == None and root.right == None:
         return val
-    left = __sumRootToLeaf(root.left, val)
-    right = __sumRootToLeaf(root.right, val)
-    print(left, right)
-    sum = int(str(left), 2) + int(str(right), 2)
-    print("sum", sum)
-    return sum
+    return __sumRootToLeaf(root.left, val) + __sumRootToLeaf(root.right, val)
 
 def sumRootToLeaf(root):
     return __sumRootToLeaf(root, 0)
