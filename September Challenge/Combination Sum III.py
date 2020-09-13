@@ -20,3 +20,5 @@ class Solution:
         backtrack(n, [], 0)
 
         return results
+
+s = Solution()
