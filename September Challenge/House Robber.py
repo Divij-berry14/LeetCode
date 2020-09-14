@@ -17,6 +17,5 @@ def rob(nums):
         print(dp)
     return dp[-1]
 
-
-nums = [2, 7, 9, 3, 1]
+nums = [2, 7, 0, 3, 1]
 print(rob(nums))
