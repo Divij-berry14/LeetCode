@@ -10,5 +10,5 @@ def lengthofLastWord(s):
         else:
             return res
 
-s = "Helloworld"
+s = "Hello world"
 print(lengthofLastWord(s))
