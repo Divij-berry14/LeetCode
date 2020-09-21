@@ -1,5 +1,5 @@
 class Solution:
-    def largestOverlap(self, A: List[List[int]], B: List[List[int]]) -> int:
+    def largestOverlap(self, A, B) -> int:
 
         dim = len(A)
 
