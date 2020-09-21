@@ -31,6 +31,29 @@ def carPooling(trips, capacity):
             return False
     return True
 
+# from collections import defaultdict
+# def carPooling(trips, capacity):
+#     """
+#     :type trips: List[List[int]]
+#     :type capacity: int
+#     :rtype: bool
+#     """
+#     d = defaultdict(lambda: 0)
+#     for trip in trips:
+#         num, start, end = trip
+#         d[start] += num
+#         d[end] -= num
+#         print(d)
+#     print(d)
+#     l = [amount for _, amount in sorted(d.items())]
+#     print(l)
+#     count = 0
+#     for amount in l:
+#         count += amount
+#         if count > capacity:
+#             return False
+#     return True
+
 trips = [[3,2,7],[3,7,9],[8,3,9]]
 capacity = 11
 print(carPooling(trips, capacity))
