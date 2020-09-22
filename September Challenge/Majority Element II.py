@@ -61,7 +61,7 @@ def majorityElement(nums):
     for n in nums:
         if candidate1 == n:
             count1 += 1
-            print("1",count1)
+            print("1", count1)
         elif candidate2 == n:
             count2 += 1
             print("2", count2)
