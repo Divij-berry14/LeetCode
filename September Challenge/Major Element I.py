@@ -1,4 +1,4 @@
-# Using Moore’s Voting Algorithm)
+# Using Moore’s Voting Algorithm
 
 def findCandidate(A):
     maj_index = 0
@@ -36,9 +36,10 @@ def printMajority(A):
 
     # Print the candidate if it is Majority
     if isMajority(A, cand) == True:
-        print("res",cand)
+        print("res", cand)
     else:
         print("No Majority Element")
 
-A = [1, 3, 3, 3, 3,1, 2]
+A = [1,1,3,7,2,3,4,9,3,10,11,3,14,3,15,3,3]
+print(len(A))
 printMajority(A)
